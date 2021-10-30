@@ -69,6 +69,9 @@ run().catch(console.dir)
 app.get('/', (req, res) =>{
     res.send ('Hotel Booking is running');
 });
+app.get('/hello', (req,res)=>{
+    console.log('Running Hotel booking server on port', port);
+})
 
 app.listen(port, ()=>{
     console.log('server running at port', port);
